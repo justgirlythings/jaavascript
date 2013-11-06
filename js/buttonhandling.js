@@ -1,15 +1,8 @@
- $( "#types" ).click(function() {
+ $( "*#types" ).click(function() {
 	 $( "#typesdesc" ).toggle("show");
  });
 
- $( "button" ).click(function() {
-	 $( "#typesdesc" ).toggle("show");
- });
-
- $( "#other" ).click(function() {
+ $( "*#other" ).click(function() {
 	 $( "#otherstuff" ).toggle("show");
  });
-
- $( "button" ).click(function() {
-	 $( "#otherstuff" ).toggle("show");
- });
+ 
