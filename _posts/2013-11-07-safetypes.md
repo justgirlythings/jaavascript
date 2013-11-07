@@ -11,3 +11,4 @@ Achieving safe use of types
 subheader
 -------------
 
+{% include safetypes.md %}
