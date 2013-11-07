@@ -20,7 +20,7 @@ for which this documentation is done, advances.</p>
 <p>There will be more sections added later, but for now lets stick with the following:</p>
 <ul>
 	{% for post in site.posts %}
-	<li><a id="{{ post.identifier }}">{{ post.title}}</a>
+	<li><a id="{{ post.identifier }}" href="#">{{ post.title}}</a>
 		<div style="display:none" id="T{{ post.identifier }}">
 			<p><a href="{{ site.baseurl }}{{ post.url 	}}">Here</a>
 			{{ post.preamble }}</p>
