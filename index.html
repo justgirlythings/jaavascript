@@ -21,17 +21,17 @@ for which this documentation is done, advances.</p>
 <ul>
 	{% for post in site.posts %}
 	<li><a id="{{ post.title }}">{{ post.title}}</a>
-		<div style="display:none" id="T{{ post.title }}">
+		<div style="display:none" id="T{{ post.id }}">
 			<p><a href="{{ site.baseurl }}{{ post.url 	}}">Here</a>Preamble</p>
-			</br><button id="T{{ post.title }}">hide</button>
+			</br><button id="T{{ post.id }}">hide</button>
 		</div>
 	</li>
 	{% endfor %}
    </ul>
 
 {% for post in site.posts %}
-	<script>$( "*#{{ post.title }}" ).click(function() {
-		$( "#T{{ post.title }}" ).toggle("show");
+	<script>$( "*#{{ post.id }}" ).click(function() {
+		$( "#T{{ post.id }}" ).toggle("show");
 		});
 	</script>
 {% endfor %}
