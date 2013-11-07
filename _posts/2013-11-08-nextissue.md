@@ -1,7 +1,7 @@
 ---
 layout: post
 title: next issue
-id: nextissse
+identifier: nextissse
 ---
 
 Something here
