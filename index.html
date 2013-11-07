@@ -21,7 +21,8 @@ title: Welcome
                 <ul>
 					{% for post in site.posts %}
                     <li><a id="{{ post.title }}">{{ post.title}}</a>
-                    <p id="T{{ post.title }}"><a href="{{ site.baseurl }}{{ post.url }}">Goto</a>Something here<button id="{{ post.title }}"></button></p>
+                    <p style="display:none" id="T{{ post.title }}"><a href="{{ site.baseurl }}{{ post.url }}">Goto</a>Something here
+                    </br><button id="{{ post.title }}"></button></p>
                     </li>
 					{% endfor %}
                 </ul>
