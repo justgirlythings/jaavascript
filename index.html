@@ -27,8 +27,9 @@ title: Welcome
                 </ul>
 
                 {% for post in site.posts %}
-					$( "*#{{ post.title }}" ).click(function() {
+					<script>$( "*#{{ post.title }}" ).click(function() {
 						$( "#T{{ post.title }}" ).toggle("show");
 					});
+					</script>
 				{% endfor %}
  
