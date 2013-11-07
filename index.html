@@ -20,8 +20,10 @@ title: Welcome
                 <p>There will be more sections added later, but for now lets stick with the following:</p>
                 <ul>
 					{% for post in site.posts %}
-                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a></li>
+                    <li><a id="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+                    <p id="T{{ post.title }}">Something here<button id="{{ post.title }}"></button></p>
+                    </li>
 					{% endfor %}
                 </ul>
 
-                <script src="js/buttonhandling.js"></script>
+                <script src="{{ site.baseurl }}js/buttonhandling.js"></script>

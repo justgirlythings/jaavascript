@@ -1,8 +1,6 @@
- $( "*#types" ).click(function() {
-	 $( "#typesdesc" ).toggle("show");
+ {% for post in site.posts %}
+ $( "*#{{ post.title }}" ).click(function() {
+	 $( "#T{{ post.title }}" ).toggle("show");
  });
-
- $( "*#other" ).click(function() {
-	 $( "#otherstuff" ).toggle("show");
- });
+ {% endfor %}
  
