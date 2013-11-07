@@ -23,7 +23,7 @@ for which this documentation is done, advances.</p>
 	<li><a id="{{ post.id }}">{{ post.title}}</a>
 		<div style="display:none" id="T{{ post.id }}">
 			<p><a href="{{ site.baseurl }}{{ post.url 	}}">Here</a>Preamble</p>
-			</br><button id="T{{ post.id }}">hide</button>
+			</br><button id="{{ post.id }}">hide</button>
 		</div>
 	</li>
 	{% endfor %}
