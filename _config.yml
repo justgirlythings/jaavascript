@@ -30,7 +30,7 @@ watch:       false    # deprecated
 server:      false    # deprecated
 host:        0.0.0.0
 port:        4000
-baseurl:     http://justgirlythings.github.io/jaavascript
+baseurl:     http://justgirlythings.github.io/jaavascript/
 url:         http://localhost:4000
 lsi:         false
 
