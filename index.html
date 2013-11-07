@@ -21,15 +21,9 @@ title: Welcome
 
                 <p>There will be more sections added later, but for now lets stick with the following:</p>
                 <ul>
-                    <li>
-                        <a href="#" id="types">Achieving safe usage of types</a>
-                    </li>
-			<p id="typesdesc" style="display:none">Something will be here.</br><button id="types">hide</button></p>
-                    <li>
-			<a href="#" id="other" class="ui-state-default ui-corner-all">other stuff</a>
-		    </li>
-			<p id="otherstuff" style="display:none">Nothing here yet</br><button id="other">hide</button></p>
-		    
+					{% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title}}</a></li>
+					{% endfor %}
                 </ul>
 
       </section>
