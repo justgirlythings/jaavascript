@@ -1,4 +1,4 @@
-###3 Tyypittömät muuttujat, tyypilliset arvot ###
+### Tyypittömät muuttujat, tyypilliset arvot ###
 
 #### Muuttujen näkyvyysalueista ####
 
@@ -23,7 +23,7 @@ Tästä on hyötyä esimerkiksi silmukoiden apumuuttujien määrittelyssä: silm
 Tyypilliset arvot
 ------------
 
-Vaikka muuttujilla ei ole arvoa, tyypeillä on. Tyyppejä ovat mm.: numeeriset tyypit, merkkijonoliteraalit, oliot ja totuusarvot. Tyyppi voi myös olla mm. null, undefined tai vaikka NaN; Not a Number.
+Vaikka muuttujilla ei ole tyyppiä, arvoilla on. Tyyppejä ovat mm.: numeeriset tyypit, merkkijonoliteraalit, oliot ja totuusarvot. Tyyppi voi myös olla mm. null, undefined tai vaikka NaN; Not a Number.
 
 <pre><code>var kokonaisluku = 2;
 var merkkijono = "merkkijono";
