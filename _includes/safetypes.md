@@ -1,5 +1,0 @@
-subheader
----------
-
-
-text
