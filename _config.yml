@@ -1,7 +1,7 @@
 baseurl:     http://justgirlythings.github.io/jaavascript/
 
 port: 3000
-pygments: false
+pygments: true
 lsi: false
 permalink: /:year/:month/:day/:title.html
 # paginate: 50
