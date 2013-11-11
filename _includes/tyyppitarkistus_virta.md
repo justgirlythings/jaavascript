@@ -27,8 +27,7 @@ Tyypilliset arvot
 
 Vaikka muuttujilla ei ole arvoa, tyypeillä on. Tyyppejä ovat mm.: numeeriset tyypit, merkkijonoliteraalit, oliot ja totuusarvot. Tyyppi voi myös olla mm. null, undefined tai vaikka NaN; Not a Number.
 
-<pre><code>
-var kokonaisluku = 2;
+<pre><code>var kokonaisluku = 2;
 var merkkijono = "merkkijono";
 var totuusarvo = true;
 </code></pre>
