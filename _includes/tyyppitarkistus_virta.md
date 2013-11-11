@@ -1,6 +1,3 @@
-Tyypittömät muuttujat, tyypilliset arvot
------------
-
 Muuttujen näkyvyysalueista
 ----------
 
