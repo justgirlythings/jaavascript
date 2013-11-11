@@ -6,4 +6,5 @@ preamble: Miten voimme tarkistaa, että tyypit ovat ehdottomasti sitä mitä nii
 ---
 
 {% include tyyppitarkistus_habs.md %}
+
 {% include tyyppitarkistus_virta.md %}
