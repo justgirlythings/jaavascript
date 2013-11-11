@@ -1,6 +1,6 @@
-### Tyypittömät muuttujat, tyypilliset arvot ###
+### Tyypittömät muuttujat, tyypilliset arvot
 
-#### Muuttujen näkyvyysalueista ####
+#### Muuttujen näkyvyysalueista
 
 Muuttujat eivät saa tyyppiä javascriptissä. Muuttujan nimi, tunnus, voidaan määritellä samaan tapaan kuin monessa ohjelmointikielessä:
 
