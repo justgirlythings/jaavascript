@@ -2,13 +2,8 @@
 layout: default
 title: Tyyppitarkistus JSsässä
 identifier: tyyppitarkistaminen
-preamble: Miten voimme määritellä, miten tyypit ovat ehdottomasti sitä, mitä niiden pitää olla
+preamble: Miten voimme tarkistaa, että tyypit ovat ehdottomasti sitä mitä niiden pitää olla. Joitakin funktioita joiden avulla voimme tehdä näitä tarkistuksia.
 ---
 
-H1titile tullee myöhemmin
-==================
-
-Jepjep
--------------
-
-{% include tyyppitarkistus.md %}
+{% include tyyppitarkistus_habs.md %}
+{% include tyyppitarkistus_virta.md %}
