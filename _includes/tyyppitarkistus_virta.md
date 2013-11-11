@@ -6,14 +6,14 @@ Muuttujen näkyvyysalueista
 
 Muuttujat eivät saa tyyppiä javascriptissä. Muuttujan nimi, tunnus, voidaan määritellä samaan tapaan kuin monessa ohjelmointikielessä:
 
-```javascript
+```
 var a = 3;
 var b = "merkkijono";
 ```
 
 Muuttujien näkyvyysalueet ovat joskus sekavan laajat. Jos muuttujaa, jota käytetään vaikka funktiossa, ei määritellä eikä sitä ole aikaisemmin määritelty se tulee aksessoinnin jälkeen globaaliksi muuttujaksi. Lohkot eivät javascriptissä näkyvyysalueita, joten lohkojen sisällä määritellyt muuttujat ovat käytettävissä. Javascriptissä on myös mahdollista määritellä muuttuja niin, että se on puhtaasti käytettävissä vain ko. lohkon sisällä:
 
-```javascript
+```
 var a = 3;
 function(){
 	write(a); //tulostuu 3
