@@ -6,15 +6,13 @@ Muuttujen näkyvyysalueista
 
 Muuttujat eivät saa tyyppiä javascriptissä. Muuttujan nimi, tunnus, voidaan määritellä samaan tapaan kuin monessa ohjelmointikielessä:
 
-<pre><code>
-var a = 3;
+<pre><code>var a = 3;
 var b = "merkkijono";
 </code></pre>
 
 Muuttujien näkyvyysalueet ovat joskus sekavan laajat. Jos muuttujaa, jota käytetään vaikka funktiossa, ei määritellä eikä sitä ole aikaisemmin määritelty se tulee aksessoinnin jälkeen globaaliksi muuttujaksi. Lohkot eivät javascriptissä näkyvyysalueita, joten lohkojen sisällä määritellyt muuttujat ovat käytettävissä. Javascriptissä on myös mahdollista määritellä muuttuja niin, että se on puhtaasti käytettävissä vain ko. lohkon sisällä:
 
-<pre><code>
-var a = 3;
+<pre><code>var a = 3;
 function(){
 	write(a); //tulostuu 3
 	let b = "merkkijono";
@@ -29,9 +27,9 @@ Tyypilliset arvot
 
 Vaikka muuttujilla ei ole arvoa, tyypeillä on. Tyyppejä ovat mm.: numeeriset tyypit, merkkijonoliteraalit, oliot ja totuusarvot. Tyyppi voi myös olla mm. null, undefined tai vaikka NaN; Not a Number.
 
-```javascript
+<pre><code>
 var kokonaisluku = 2;
 var merkkijono = "merkkijono";
 var totuusarvo = true;
-```
+</code></pre>
 
