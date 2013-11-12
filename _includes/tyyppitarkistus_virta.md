@@ -55,3 +55,4 @@ var onkoSamaTyyppi2 = function(tarkistettava, referenssi){
 </code></pre>
 
 
+Arvojen tyypit on syytä tarkistaa aina kun funktiolla on parametrejä. Näin voidaan varmistua, että funktio toimii oikein ja tuottaa mielekkään tuloksen.
