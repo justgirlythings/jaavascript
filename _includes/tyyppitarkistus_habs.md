@@ -4,27 +4,27 @@ Tyyppitarkistaminen
 Tavoitteet
 ----------
 
-* Saada tarkistettua funktion palautuksen tyyppi
-* Eli jos funktion pitäisi palauttaa integer, se palauttaa integerin
-* Jos palauttaa jotain muuta, voidaan tarvittaessa palauttaa arvo virheen kera
+ Saada tarkistettua funktion palautuksen tyyppi
+ Eli jos funktion pitäisi palauttaa integer, se palauttaa integerin
+ Jos palauttaa jotain muuta, voidaan tarvittaessa palauttaa arvo virheen kera
 
 Hyödyt
 ------
 
-* Tiedetään, mitä saadaan
-* Voidaan varmuudella käyttää saatuja arvoja joissain operaatioissa
+ Tiedetään, mitä saadaan
+ Voidaan varmuudella käyttää saatuja arvoja joissain operaatioissa
 
 Miten toteuttaa?
 ----------------
 
 Luodaan jokin funktio, joka
-* Ottaa sisäänsä parametreja, esimerkiksi
-* Mitä funktion pitäisi palauttaa
-* Funktion, jota käsitellään
-* Funktiolle annettavat parametrit
-* Valinnaisena (ylimääräisinä argumentteina)
-  - Jos tulee virhe, palautetaanko mitään
-  - Mahdollinen oma tarkistusfunktio
+ Ottaa sisäänsä parametreja, esimerkiksi
+ Mitä funktion pitäisi palauttaa
+ Funktion, jota käsitellään
+ Funktiolle annettavat parametrit
+ Valinnaisena (ylimääräisinä argumentteina)
+   Jos tulee virhe, palautetaanko mitään
+   Mahdollinen oma tarkistusfunktio
 
 Yksinkertainen Integer-tarkistaja
 ---------------------------------
