@@ -21,7 +21,7 @@ Luodaan jokin funktio, joka
 
 - Ottaa sisäänsä parametreja, esimerkiksi
     - Mitä funktion pitäisi palauttaa
-    - Funktion itsensä
+    - Funktion, jota tutkitaan
     - Funktiolle annettavat parametrit
     - Valinnaisena (ylimääräisinä argumentteina)
         - Jos tulee virhe, palautetaanko mitään
