@@ -8,6 +8,11 @@ Tavoitteet
     - Eli jos funktion pitäisi palauttaa integer, se palauttaa integerin
     - Jos palauttaa jotain muuta, voidaan tarvittaessa palauttaa arvo virheen kera
 
+Hyödyt
+------
+
+- Tiedetään, mitä saadaan
+- Voidaan varmuudella käyttää saatuja arvoja joissain operaatioissa
 
 Miten toteuttaa?
 ----------------
@@ -21,4 +26,25 @@ Luodaan jokin funktio, joka
     - Valinnaisena (ylimääräisinä argumentteina)
         - Jos tulee virhe, palautetaanko mitään
         - Mahdollinen oma tarkistusfunktio
-            - Kuinka tarkkoja ollaan (onko 1 true, vai onko vain true true)
+
+Yksinkertainen Integer-tarkistaja
+---------------------------------
+
+<pre><code>
+function onkoInt(a) {
+  if ((typeof a === "number") && Math.floor(a) === a) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+var a = "jk"
+if (onkoInt(a)) {
+  alert("JEE!");
+}
+else {
+  alert("hö.");
+}
+</pre></code>
