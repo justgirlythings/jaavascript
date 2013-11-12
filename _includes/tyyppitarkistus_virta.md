@@ -30,3 +30,19 @@ var merkkijono = "merkkijono";
 var totuusarvo = true;
 </code></pre>
 
+Arvon tyypin tarkastuksesta
+------------
+
+Javascript tarjoaa kasan välineitä arvon tyypin tarkastukseen. Esitellään muutama funktio jolla tämä onnistuu.
+
+Yksinkertainen mekanismi joka testaa, että muuttujan tyyppi on numeerinen saattaisi näyttää tältä:
+<pre><code>var onkoNumeerinen = function(muuttuja){
+   return typeof muuttuja === typeof 1;
+}
+</code></pre>
+
+Esimerkkiä voi laajentaa ja yleistää tarkistamaan minkä tahansa arvon tyypin:
+<pre><code>var onkoSamaTyyppi = function(tarkistettava, referenssi){
+   return typeof muuttuja === typeof referenssi;
+}
+</code></pre>
