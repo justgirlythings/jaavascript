@@ -18,11 +18,11 @@ Miten toteuttaa?
 ----------------
 
 Luodaan jokin funktio, joka
-- Ottaa sisäänsä parametreja, esimerkiksi
-- Mitä funktion pitäisi palauttaa
-- Funktion, jota käsitellään
-- Funktiolle annettavat parametrit
-- Valinnaisena (ylimääräisinä argumentteina)
+* Ottaa sisäänsä parametreja, esimerkiksi
+* Mitä funktion pitäisi palauttaa
+* Funktion, jota käsitellään
+* Funktiolle annettavat parametrit
+* Valinnaisena (ylimääräisinä argumentteina)
   - Jos tulee virhe, palautetaanko mitään
   - Mahdollinen oma tarkistusfunktio
 
