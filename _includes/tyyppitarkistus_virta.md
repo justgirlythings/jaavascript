@@ -9,14 +9,14 @@ var b = "merkkijono";
 
 Muuttujien näkyvyysalueet ovat joskus sekavan laajat. Jos muuttujaa, jota käytetään vaikka funktiossa, ei määritellä eikä sitä ole aikaisemmin määritelty se tulee aksessoinnin jälkeen globaaliksi muuttujaksi. Lohkot eivät javascriptissä näkyvyysalueita, joten lohkojen sisällä määritellyt muuttujat ovat käytettävissä. Javascriptissä on myös mahdollista määritellä muuttuja niin, että se on puhtaasti käytettävissä vain ko. lohkon sisällä:
 
-{% highlight javascript %}
+<pre><code>
 var a = 3;
 function(){
 	write(a); //tulostuu 3
 	let b = "merkkijono";
 }
 write(b); // tulostuu 'undefined'
-{% endhighlight %}
+</code></pre>
 
 Tästä on hyötyä esimerkiksi silmukoiden apumuuttujien määrittelyssä: silmukan päätyttyä apumuuttuja on vapaasti käytettävissä ilman, että silmukan suorituksessa määritelty arvo säilyisi muuttujassa. Toisaalta on myös hyvien ohjelmointikäytänteiden mukaista nimetä muuttujat kuvaavasti, jolloin on todennäköisempää, että muuttujien nimiä ei tahattomasti uudelleenkäytetä.
 
@@ -42,7 +42,12 @@ Yksinkertainen mekanismi joka testaa, että muuttujan tyyppi on numeerinen saatt
 </code></pre>
 
 Esimerkkiä voi laajentaa ja yleistää tarkistamaan minkä tahansa arvon tyypin:
-<pre><code>var onkoSamaTyyppi = function(tarkistettava, referenssi){
+<pre><code>var onkoSamaTyyppi1 = function(tarkistettava, referenssi){
    return typeof muuttuja === typeof referenssi;
 }
+
+var onkoSamaTyyppi2 = function(tarkistettava, referenssi){
+   return tarkistettava instanceof (typeof referenssi);
+}
 </code></pre>
+
