@@ -43,16 +43,13 @@ Yksinkertainen mekanismi joka testaa, että muuttujan tyyppi on numeerinen saatt
 </code></pre>
 Javascriptissä muuttuja voi saada arvon NaN, epänumero, joka kuitenkin tyypittyy numeroksi, joten sen testaus täyty ottaa myös huomioon.
 
-
 Esimerkkiä voi laajentaa ja yleistää tarkistamaan minkä tahansa arvon tyypin:
 <pre><code>var onkoSamaTyyppi1 = function(tarkistettava, referenssi){
    return typeof muuttuja === typeof referenssi;
 }
-
 var onkoSamaTyyppi2 = function(tarkistettava, referenssi){
    return tarkistettava instanceof (typeof referenssi);
 }
 </code></pre>
-
 
 Arvojen tyypit on syytä tarkistaa aina kun funktiolla on parametrejä. Näin voidaan varmistua, että funktio toimii oikein ja tuottaa mielekkään tuloksen.
