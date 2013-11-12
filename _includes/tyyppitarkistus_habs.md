@@ -11,8 +11,8 @@ Tavoitteet
 Hyödyt
 ------
 
-*Tiedetään, mitä saadaan
-*Voidaan varmuudella käyttää saatuja arvoja joissain operaatioissa
+-Tiedetään, mitä saadaan
+-Voidaan varmuudella käyttää saatuja arvoja joissain operaatioissa
 
 Miten toteuttaa?
 ----------------
