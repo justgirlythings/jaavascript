@@ -37,9 +37,12 @@ Javascript tarjoaa kasan välineitä arvon tyypin tarkastukseen. Esitellään mu
 
 Yksinkertainen mekanismi joka testaa, että muuttujan tyyppi on numeerinen saattaisi näyttää tältä:
 <pre><code>var onkoNumeerinen = function(muuttuja){
-   return typeof muuttuja === typeof 1;
+   return (typeof muuttuja === typeof 1) 
+   && (muuttuja == !NaN);
 }
 </code></pre>
+Javascriptissä muuttuja voi saada arvon NaN, epänumero, joka kuitenkin tyypittyy numeroksi, joten sen testaus täyty ottaa myös huomioon.
+
 
 Esimerkkiä voi laajentaa ja yleistää tarkistamaan minkä tahansa arvon tyypin:
 <pre><code>var onkoSamaTyyppi1 = function(tarkistettava, referenssi){
@@ -50,4 +53,5 @@ var onkoSamaTyyppi2 = function(tarkistettava, referenssi){
    return tarkistettava instanceof (typeof referenssi);
 }
 </code></pre>
+
 
