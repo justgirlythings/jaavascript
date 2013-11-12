@@ -41,6 +41,7 @@ Yksinkertainen mekanismi joka testaa, että muuttujan tyyppi on numeerinen saatt
    && (muuttuja == !NaN);
 }
 </code></pre>
+
 Javascriptissä muuttuja voi saada arvon NaN, epänumero, joka kuitenkin tyypittyy numeroksi, joten sen testaus täyty ottaa myös huomioon.
 
 Esimerkkiä voi laajentaa ja yleistää tarkistamaan minkä tahansa arvon tyypin:
