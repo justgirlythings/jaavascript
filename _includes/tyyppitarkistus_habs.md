@@ -24,8 +24,8 @@ Luodaan jokin funktio, joka
 * Funktion, jota käsitellään
 * Funktiolle annettavat parametrit
 * Valinnaisena (ylimääräisinä argumentteina)
-  -- Jos tulee virhe, palautetaanko mitään
-  -- Mahdollinen oma tarkistusfunktio
+   1. Jos tulee virhe, palautetaanko mitään
+   2. Mahdollinen oma tarkistusfunktio
 
 Yksinkertainen Integer-tarkistaja
 ---------------------------------
