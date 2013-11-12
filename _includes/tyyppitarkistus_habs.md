@@ -18,8 +18,6 @@ Miten toteuttaa?
 ----------------
 
 Luodaan jokin funktio, joka
-
-<<<<<<< HEAD
 -Ottaa sisäänsä parametreja, esimerkiksi
 -Mitä funktion pitäisi palauttaa
 -Funktion itsensä
@@ -27,15 +25,6 @@ Luodaan jokin funktio, joka
 -Valinnaisena (ylimääräisinä argumentteina)
 -Jos tulee virhe, palautetaanko mitään
 -Mahdollinen oma tarkistusfunktio
-=======
-- Ottaa sisäänsä parametreja, esimerkiksi
-    - Mitä funktion pitäisi palauttaa
-    - Funktion, jota tutkitaan
-    - Funktiolle annettavat parametrit
-    - Valinnaisena (ylimääräisinä argumentteina)
-        - Jos tulee virhe, palautetaanko mitään
-        - Mahdollinen oma tarkistusfunktio
->>>>>>> 64bb1cc411fc9e151a6fe95afe9a9759dcf4821b
 
 Yksinkertainen Integer-tarkistaja
 ---------------------------------
