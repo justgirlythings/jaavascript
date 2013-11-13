@@ -11,12 +11,14 @@ Muuttujien näkyvyysalueet ovat joskus sekavan laajat. Jos muuttujaa, jota käyt
 
 <pre><code>
 var a = 3;
-function(){
+function nakyvyys(){
 	write(a); //tulostuu 3
 	let b = "merkkijono";
 }
 write(b); // tulostuu 'undefined'
 </code></pre>
+
+Esimerkki toimii esimerkiksi Rhino-shellillä.
 
 Tästä on hyötyä esimerkiksi silmukoiden apumuuttujien määrittelyssä: silmukan päätyttyä apumuuttuja on vapaasti käytettävissä ilman, että silmukan suorituksessa määritelty arvo säilyisi muuttujassa. Toisaalta on myös hyvien ohjelmointikäytänteiden mukaista nimetä muuttujat kuvaavasti, jolloin on todennäköisempää, että muuttujien nimiä ei tahattomasti uudelleenkäytetä.
 
