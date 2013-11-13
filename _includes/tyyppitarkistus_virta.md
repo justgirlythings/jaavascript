@@ -57,6 +57,7 @@ Arvojen tyypit on syytä tarkistaa aina kun funktiolla on parametrejä. Näin vo
 
 Taulukon arvojen tyypin tarkastuksesta
 ------------
+
 Taulukon alkioiden tyyppitarkastuksia voitaisiin suorittaa esimerkiksi tarkastamalla ovatko kaikki taulukon alkiot haluttua tyyppiä, tai löytyykö taulukosta alkio, joka on haluttua tyyppiä.
 
 Pari esimerkkifunktiota:
