@@ -73,7 +73,7 @@ Pari esimerkkifunktiota:
     return true;
 }
 var onkoAlkioissaTyyppia = function(a, type) {
-    for (var i = 0; i &alt; a.length; ++i){
+    for (var i = 0; i &lt; a.length; ++i){
         if (typeof a[i] === type) {
             return true;
         }
