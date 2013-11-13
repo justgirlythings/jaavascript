@@ -15,6 +15,7 @@ function nakyvyys(){
 	write(a); //tulostuu 3
 	let b = "merkkijono";
 }
+nakyvyys();
 write(b); // tulostuu 'undefined'
 </code></pre>
 
