@@ -32,12 +32,10 @@ Yksinkertainen Integer-tarkistaja
 
 <pre><code>
 function onkoInt(a) {
-  if ((typeof a === "number") &amp; &amp;  Math.floor(a) === a) {
+  if (typeof a === "number" &amp;&amp; Math.floor(a) === a) {
     return true;
   }
-  else {
-    return false;
-  }
+  return false;
 }
 </br>
 var a = "jk"
