@@ -54,3 +54,34 @@ var onkoSamaTyyppi2 = function(tarkistettava, referenssi){
 </code></pre>
 
 Arvojen tyypit on syytä tarkistaa aina kun funktiolla on parametrejä. Näin voidaan varmistua, että funktio toimii oikein ja tuottaa mielekkään tuloksen.
+
+Taulukon arvojen tyypin tarkastuksesta
+------------
+Taulukon alkioiden tyyppitarkastuksia voitaisiin suorittaa esimerkiksi tarkastamalla ovatko kaikki taulukon alkiot haluttua tyyppiä, tai löytyykö taulukosta alkio, joka on haluttua tyyppiä.
+
+Pari esimerkkifunktiota:
+<pre><code>var ovatkoKaikkiAlkiotTyyppia = function(a, type) {
+    for (var i = 0; i &lt; a.length; ++i){
+        if (typeof a[i] !== type) {
+            return false;
+        }
+    }
+    return true;
+}
+
+var onkoAlkioissaTyyppia = function(a, type) {
+    for (var i = 0; i &alt; a.length; ++i){
+        if (typeof a[i] === type) {
+            return true;
+        }
+    }
+    return false;
+}
+</code></pre>
+
+Näitä funktioita voitaisiin käyttää esimerkiksi seuraavasti:
+
+<pre><code>var a = ["köpö", "kissa", "appelsiini", 3];
+ovatkoKaikkiAlkiotTyyppia(a, "string");	// false
+onkoAlkioissaTyyppia(a, typeof 666);	// true
+</code></pre>
