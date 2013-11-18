@@ -51,8 +51,8 @@ Esimerkkiä voi laajentaa ja yleistää tarkistamaan minkä tahansa arvon tyypin
 <pre><code>var onkoSamaTyyppi1 = function(tarkistettava, referenssi){
    return typeof muuttuja === typeof referenssi;
 }
-var onkoSamaTyyppi2 = function(tarkistettava, referenssi){
-   return tarkistettava instanceof (typeof referenssi);
+var onkoSamaOliotyyppi = function(tarkistettava, olio){
+   return tarkistettava instanceof olio;
 }
 </code></pre>
 
