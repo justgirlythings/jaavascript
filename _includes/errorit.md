@@ -26,5 +26,21 @@ syöttellä suoritettuja operaatioita haluta suorittaa lainkaan. (Toki logiin j�
 
 Miten?
 ------
+Tehdään laajahko poc.
+Oletetaan, että a pitää tallentaa arvo "1" (integer)
 
-TL;DW
+<pre><code>
+a="s";
+try {
+  if (a!==1){
+    throw new Error("Pieleen meni");
+  }
+  alert("JEE!");
+}
+catch (e) {
+  alert("Virhe tapahtui - " +e);
+}
+finally {
+   alert("THIS IS THE END!");
+}
+</code></pre>
