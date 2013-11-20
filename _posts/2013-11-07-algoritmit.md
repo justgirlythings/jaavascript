@@ -9,4 +9,5 @@ preamble: Errorit includetettu.
 Soppaa tällä viikolla hämmensivät: Tero Keinänen, Frans Ojala, Ilari Oras ja Sami Korhonen
 
 {% include errorit.md %}
+
 {% include alogt-yms-virta.md %}
