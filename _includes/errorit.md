@@ -64,11 +64,13 @@ Tyypittömyys ja algoritmit
 JavaScriptin muuttujien tyypittömyys luo ongelmatilanteita ja mahdollisuuksia. On tarpeetonta pyrkiä tekemään JavaScript ohjelmasta Javan kaltaista täysin tyyppiturvallista, kun tyypittömyyttä voidaan käyttää hyödyksi. Tämän kautta voidaan päästä selkeämpään ja tehokkaampaan lopputulokseen. Esimerkiksi voitaisiin luoda geneerinen funktio, joka järjestää kaikentyyppiset taulukot. Näin saadaan vähennettyä toiston tarvetta ohjelmassa. Tyypittömyyttä hyödyntäessä tulee kuitenkin huomioida arvojen tyypit, joten tyyppitarkastukset ovat ehdottoman tarpeellisia. Tyypittömyyden osalta on tärkeää pitää yhtenäistä ja selkeää linjaa.
 
 Funktionaalinen vs. imperatiivinen
-===============
+==================================
+
 JavaScriptiä on toki helppo käyttää imperatiivisesti, mutta joustavuutensa ansiosta se soveltuu yhtä hyvin funktionaaliseen käyttöön. JavaScriptissä on esimerkiksi mahdollista tallentaa funktio muuttujan arvoksi, ja täten syöttää funktio parametrinä toiselle funktiolle. Sisäänrakennettuna - ainakin uusimmista implementaatioista - löytyvät mm. tärkeät map, filter, reduce sekä muutamia muita funktionaalisuudelta haiskahtavia funktioita. Tämä kertoo siitä, että JavaScript on myös tarkoitettu käytettäväksi funktionaalisesti.
 
 Kohta sattuu Juhaa leukaan
---------------
+--------------------------
+
 JavaScriptissä on siis hyvät valmiudet funktionaalisuuteen, mutta milloin niitä kannattaa hyödyntää? Ikävä kyllä funktionaalisuuden kanssa täytyy olla muutamissa tapauksissa todella tarkkana.
 
 <pre><code>
@@ -78,8 +80,8 @@ var youngest = _.chain(stooges)
   .map(function(stooge){ return stooge.name + ' is ' + stooge.age; })
   .first()
   .value();
-</code><pre>
+</code></pre>
 
-Esimerkki on otettu Underscore.js -kirjaston dokumentaatiosta ja se esittelee kätevää funktioiden ketjuttamista, joka on yksi kirjaston tarjoamista mahdollisuuksista. Tässä suoritetaan map kaikille taulukossa oleville alkioille! Jos taulukossa olisikin vaikkapa 10 000 alkiota ja mapattava funktio tekisi jotain hiukan raskaampaa laskentaa ja päälle vielä ajettaisiin lopuksi vaikkapa jonkinlainen filter, voisi tästä muodostua suorituskykyongelma. Funktionaalisen tyylin kanssa on siis pidettävä muistissa, että JavaScriptissä ei ole laiskuuden tuomia etuja, joten operaatioiden järjestys täytyy harkita tarkkaan ja joskus mahdollisesti korvata jokin kohta imperatiivisella tyylillä.
+Esimerkki on otettu Underscore.js -kirjaston dokumentaatiosta ja se esittelee kätevää funktioiden ketjuttamista, joka on yksi kirjaston tarjoamista mahdollisuuksista. Nättiä, eikös vaan? Tässä suoritetaan map kaikille taulukossa oleville alkioille! Jos taulukossa olisikin vaikkapa 10 000 alkiota ja mapattava funktio tekisi jotain hiukan raskaampaa laskentaa ja päälle vielä ajettaisiin lopuksi vaikkapa jonkinlainen filter, voisi tästä muodostua suorituskykyongelma. Funktionaalisen tyylin kanssa on siis pidettävä muistissa, että JavaScriptissä ei ole laiskuuden tuomia etuja, joten operaatioiden järjestys täytyy harkita tarkkaan ja joskus mahdollisesti korvata jokin kohta imperatiivisella tyylillä.
 
 Kun tämän pitää mielessä, on funktionaalisuus todella kätevä työkalu JavaScriptissä. Tyypillisessä ympäristössä ei myöskään käsitellä niin suuria tietomääriä, että suorituskyvyn kanssa olisi ongelmia, vaikka hiukan sähläisikin.
