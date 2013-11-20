@@ -85,3 +85,27 @@ var youngest = _.chain(stooges)
 Esimerkki on otettu [Underscore.js](http://underscorejs.org/#chain) -kirjaston dokumentaatiosta ja se esittelee kätevää funktioiden ketjuttamista, joka on yksi kirjaston tarjoamista mahdollisuuksista. Nättiä, eikös vaan? Tässä suoritetaan map kaikille taulukossa oleville alkioille! Jos taulukossa olisikin vaikkapa 10 000 alkiota ja mapattava funktio tekisi jotain hiukan raskaampaa laskentaa ja päälle vielä ajettaisiin lopuksi vaikkapa jonkinlainen filter, voisi tästä muodostua suorituskykyongelma. Funktionaalisen tyylin kanssa on siis pidettävä muistissa, että JavaScriptissä ei ole laiskuuden tuomia etuja, joten operaatioiden järjestys täytyy harkita tarkkaan ja joskus mahdollisesti korvata jokin kohta imperatiivisella tyylillä.
 
 Kun tämän pitää mielessä, on funktionaalisuus todella kätevä työkalu JavaScriptissä. Tyypillisessä ympäristössä ei myöskään käsitellä niin suuria tietomääriä, että suorituskyvyn kanssa olisi ongelmia, vaikka hiukan sähläisikin.
+
+Ai että kun on nättiä!
+----------------------
+
+Moni ruma ja vanhanaikainen imperatiivinen koodi voidaan muuttaa mestarien funktionaaliseksi koodiksi, joka näyttää, tuoksuu ja maistuu paremmalta.
+
+<pre><code>
+for (var u in splitTests) {
+  var actual = irc.splitcmd(u);
+  var expected = splitTests[u];
+
+  assert.deepEqual(actual, expected);
+}
+</code></pre>
+
+Esimerkiksi tämä [satunnaisesta GitHub-projektista](https://github.com/totallymike/ircnode/blob/93f2df1dbb144c235584f0b77491977cbc0602e4/test/test.js) vedetty pätkä, joka tarkistaa että joku ihme splitcmd-funktio osaa parsia irc-viestin oikein voitaisiin muuttaa oikeaoppiseksi funktionaaliseksi (Underscore.js-) koodiksi näin:
+
+<pre><code>
+_(splitTests).each(function(expected, cmd) {
+  assert.deepEquals(irc.splitcmd(cmd), expected) 
+});
+</code></pre>
+
+Jumankekka!! Sehän on melkein kuin englantia lukisi. Aika päheetä.
