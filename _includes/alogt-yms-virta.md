@@ -38,10 +38,9 @@ Tätä ominaisuutta voi myös käyttää hyväksi. Voimme määritellä vaikka j
 
 Toinen vahva tekniikka joka hyödyntää sulkeumia on antaa funktio parametrina toiselle funktiolle. Edellistä taulukon järjestyksen määräystä jatkaen; sen sijaan, että määrittelemme kullekin oliolle järjestyksen erikseen, voimme antaa järjestävälle funktiolle säännön funktiona:
 
-<pre><code> var taulukkoKapseloituja = [kapseloiAksessorein("ab"),
+<pre><code>var taulukkoKapseloituja = [kapseloiAksessorein("ab"),
 			kapseloiAksessorein("abc"),
 			kapseloiAksessorein("a")];
-write(taulukkoKapseloituja);	//ab, abc, a
 
 function pituusKomparaattori() {
     return function(a, b) {
@@ -51,6 +50,7 @@ function pituusKomparaattori() {
     }
 }
 
+write(taulukkoKapseloituja);	//ab, abc, a
 taulukkoKapseloituja.sort(pituusKomparaattori());
 write(taulukkoKapseloituja);	//a, ab, abc
 </code></pre> 

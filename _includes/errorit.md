@@ -89,7 +89,7 @@ Ai että kun on nättiä!
 
 Moni ruma ja vanhanaikainen imperatiivinen koodi voidaan muuttaa mestarien funktionaaliseksi koodiksi, joka näyttää, tuoksuu ja maistuu paremmalta.
 
-<pre><code> for (var u in splitTests) {
+<pre><code>for (var u in splitTests) {
   var actual = irc.splitcmd(u);
   var expected = splitTests[u];
 
@@ -99,7 +99,7 @@ Moni ruma ja vanhanaikainen imperatiivinen koodi voidaan muuttaa mestarien funkt
 
 Esimerkiksi tämä [satunnaisesta GitHub-projektista](https://github.com/totallymike/ircnode/blob/93f2df1dbb144c235584f0b77491977cbc0602e4/test/test.js) vedetty pätkä, joka tarkistaa että joku ihme splitcmd-funktio osaa parsia irc-viestin oikein voitaisiin muuttaa oikeaoppiseksi funktionaaliseksi (Underscore.js-) koodiksi näin:
 
-<pre><code> _(splitTests).each(function(expected, cmd) {
+<pre><code>_(splitTests).each(function(expected, cmd) {
   assert.deepEquals(irc.splitcmd(cmd), expected) 
 });
 </code></pre>
