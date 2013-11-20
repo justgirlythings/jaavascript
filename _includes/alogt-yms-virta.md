@@ -36,3 +36,21 @@ write(kapseloitu.getMuuttuja);		// function (){return "Eikä ole"}
 
 Tätä ominaisuutta voi myös käyttää hyväksi. Voimme määritellä vaikka järjestyksen määräävän funktion uudelleen aina tarpeen vaatiessa suorituksen aikana. Taulukkoon voisi tallentaa kasan erilaisia funktioita ja määritellä määrätyn olion järjestyksen sen sisältämässä taulukossa lennossa määrittelemällä sen vertailufunktion aina uudelleen.
 
+Toinen vahva tekniikka joka hyödyntää sulkeumia on antaa funktio parametrina toiselle funktiolle. Edellistä taulukon järjestyksen määräystä jatkaen; sen sijaan, että määrittelemme kullekin oliolle järjestyksen erikseen, voimme antaa järjestävälle funktiolle säännön funktiona:
+
+<pre><code> var taulukkoKapseloituja = [{kapseloiAksessorein("ab")},
+			{kapseloiAksessorein("abc")},
+			{kapseloiAksessorein("a")}];
+write(taulukkoKapseloituja);	//ab, abc, a
+
+function pituusKomparaattori() {
+    return function(a, b) {
+        a = a.getMuuttuja().length;
+        b = b.getMuuttuja().length;
+        return a-b;
+    }
+}
+
+taulukkoKapseloituja.sort(pituusKomparaattori());
+write(taulukkoKapseloituja);	//a, ab, abc
+</code></pre> 
