@@ -1,5 +1,5 @@
 Sulkeumista
----------
+========
 
 Sulkeumat ovat tapa kapseloida funktioon muuttujia ja toisia funktioita. Sulkeuma nimensä mukaisesti sulkee muuttujat yms. sisäänsä ikään kuin ulkomaailman ulottumattomiin, jolloin niihin pääsee vaikuttamaan vain sulkeumaan määriteltyjen funktioiden avulla. Tämä simuloi monen ohjelmointikielten piilotettuja muuttujua ja funktioita (esimerkiksi Javassa private).
 
