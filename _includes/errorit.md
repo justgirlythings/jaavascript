@@ -29,8 +29,7 @@ Miten?
 Tehdään laajahko poc.
 Oletetaan, että a pitää tallentaa arvo "1" (integer)
 
-<pre><code>
-a="s";
+<pre><code>a="s";
 try {
   if (a!==1){
     throw new Error("Pieleen meni");
@@ -48,8 +47,7 @@ finally {
 Yksinkertainen tilanne voitaisiin hoitaa myös if-else rakenteella, jolloin varsinaisia poikkeuksia ei tarvitse käsitellä. 
 Tämä saattaa olla hieman nopeampi tapa kuin poikkeuksen käsittely esimerkiksi try-catch rakenteella.
 
-<pre><code>
-a="s";
+<pre><code>a="s";
 if (a!==1){
 	alert("Virhe tapahtui - Pieleen meni" );
 } else {
@@ -73,8 +71,8 @@ Kohta sattuu Juhaa leukaan
 
 JavaScriptissä on siis hyvät valmiudet funktionaalisuuteen, mutta milloin niitä kannattaa hyödyntää? Ikävä kyllä funktionaalisuuden kanssa täytyy olla muutamissa tapauksissa todella tarkkana.
 
-<pre><code>
-var stooges = [{name: 'curly', age: 25}, {name: 'moe', age: 21}, {name: 'larry', age: 23}];
+<pre><code>var stooges = [{name: 'curly', age: 25}, 
+							{name: 'moe', age: 21}, {name: 'larry', age: 23}];
 var youngest = _.chain(stooges)
   .sortBy(function(stooge){ return stooge.age; })
   .map(function(stooge){ return stooge.name + ' is ' + stooge.age; })
@@ -91,8 +89,7 @@ Ai että kun on nättiä!
 
 Moni ruma ja vanhanaikainen imperatiivinen koodi voidaan muuttaa mestarien funktionaaliseksi koodiksi, joka näyttää, tuoksuu ja maistuu paremmalta.
 
-<pre><code>
-for (var u in splitTests) {
+<pre><code> for (var u in splitTests) {
   var actual = irc.splitcmd(u);
   var expected = splitTests[u];
 
@@ -102,8 +99,7 @@ for (var u in splitTests) {
 
 Esimerkiksi tämä [satunnaisesta GitHub-projektista](https://github.com/totallymike/ircnode/blob/93f2df1dbb144c235584f0b77491977cbc0602e4/test/test.js) vedetty pätkä, joka tarkistaa että joku ihme splitcmd-funktio osaa parsia irc-viestin oikein voitaisiin muuttaa oikeaoppiseksi funktionaaliseksi (Underscore.js-) koodiksi näin:
 
-<pre><code>
-_(splitTests).each(function(expected, cmd) {
+<pre><code> _(splitTests).each(function(expected, cmd) {
   assert.deepEquals(irc.splitcmd(cmd), expected) 
 });
 </code></pre>
