@@ -72,7 +72,7 @@ Kohta sattuu Juhaa leukaan
 JavaScriptissä on siis hyvät valmiudet funktionaalisuuteen, mutta milloin niitä kannattaa hyödyntää? Ikävä kyllä funktionaalisuuden kanssa täytyy olla muutamissa tapauksissa todella tarkkana.
 
 <pre><code>var stooges = [{name: 'curly', age: 25}, 
-							{name: 'moe', age: 21}, {name: 'larry', age: 23}];
+			{name: 'moe', age: 21}, {name: 'larry', age: 23}];
 var youngest = _.chain(stooges)
   .sortBy(function(stooge){ return stooge.age; })
   .map(function(stooge){ return stooge.name + ' is ' + stooge.age; })
