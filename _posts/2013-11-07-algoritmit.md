@@ -2,7 +2,7 @@
 layout: default
 title: Algoritmit, funktiot ja sulkeumat ja poikkeusten käsittely
 identifier: algoritmit
-preamble: Errorit includetettu.
+preamble: Ideoita hyvistä ohjelmointikäytänteistä algoritmeja ja funktioita kirjoitettaessa. Ajatuksia poikkeusten käsittelystä ja sulkeumien käytöstä.
 ---
 
 
