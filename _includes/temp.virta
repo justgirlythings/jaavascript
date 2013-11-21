@@ -1,9 +1,0 @@
-Toinen vahva tekniikka joka hyödyntää sulkeumia on antaa funktio parametrina toiselle funktiolle. Edellistä taulukon järjestyksen määräystä jatkaen; sen sijaan, että määrittelemme kullekin oliolle järjestyksen erikseen, voimme antaa järjestävälle funktiolle säännön funktiona:
-
-<pre><code> var taulukkoKapseloituja = [{kapseloiAksessorein("ab")},
-			{kapseloiAksessorein("abc")},
-			{kapseloiAksessorein("a")}];
-write(taulukkoKapseloituja);
-taulukkoKapseloituja.sort(function(a, b){return a.length()-b.length()});
-write(taulukkoKapseloituja);
-</code></pre> 
