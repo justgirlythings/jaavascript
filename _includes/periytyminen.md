@@ -29,7 +29,7 @@ var pomo = new Elain('Pomo', 'Koira');
 pomo.nimi = 'Lilliputti';
 pomo.ika = 3;
 delete pomo.rotu;
-alert('nimi: ' + pomo.nimi + ', ' + pomo.ika + ' vuotta, rotu: ' + pomo.rotu);
+alert(pomo.nimi + ' on ' + pomo.ika + ' vuotta, rotu: ' + pomo.rotu);
 </code></pre>
 
 Periminen
