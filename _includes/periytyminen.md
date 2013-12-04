@@ -47,4 +47,4 @@ var pomo = new Koira('Pomo', 'Chihuahua');
 Prototyyppiketju
 ----------
 
-Blaa blaa
+Otan täst kopin ku herään -- habs
