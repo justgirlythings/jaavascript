@@ -57,12 +57,12 @@ alert("THIS IS THE END!");
 </code></pre>
 
 Tyypittömyys ja algoritmit
-===============
+---------------------------
 
 JavaScriptin muuttujien tyypittömyys luo ongelmatilanteita ja mahdollisuuksia. On tarpeetonta pyrkiä tekemään JavaScript ohjelmasta Javan kaltaista täysin tyyppiturvallista, kun tyypittömyyttä voidaan käyttää hyödyksi. Tämän kautta voidaan päästä selkeämpään ja tehokkaampaan lopputulokseen. Esimerkiksi voitaisiin luoda geneerinen funktio, joka järjestää kaikentyyppiset taulukot. Näin saadaan vähennettyä toiston tarvetta ohjelmassa. Tyypittömyyttä hyödyntäessä tulee kuitenkin huomioida arvojen tyypit, joten tyyppitarkastukset ovat ehdottoman tarpeellisia. Tyypittömyyden osalta on tärkeää pitää yhtenäistä ja selkeää linjaa.
 
 Funktionaalinen vs. imperatiivinen
-==================================
+------------------------------------
 
 JavaScriptiä on toki helppo käyttää imperatiivisesti, mutta joustavuutensa ansiosta se soveltuu yhtä hyvin funktionaaliseen käyttöön. JavaScriptissä on esimerkiksi mahdollista tallentaa funktio muuttujan arvoksi, ja täten syöttää funktio parametrinä toiselle funktiolle. Sisäänrakennettuna - ainakin uusimmista implementaatioista - löytyvät mm. tärkeät map, filter, reduce sekä muutamia muita funktionaalisuudelta haiskahtavia funktioita. Tämä kertoo siitä, että JavaScript on myös tarkoitettu käytettäväksi funktionaalisesti.
 
