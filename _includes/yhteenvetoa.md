@@ -22,4 +22,4 @@ JavaScriptiä kannatta käyttää silloin, kun se on järkevää (ofc). JavaScri
 
 Viime aikoina JS on saanut jalansijaa myös muualta kuin selaimesta. Hyvänä esimerkkinä toimii palvelinpään moottori node.js ja sen mainio pakettienhallintamanageri npm. Täten JS yleistynee myös muualla, joka on hyväksi kielelle, sillä kaikkea ei voi tehdä enää niin villisti ja vapaasti.
 
-JSsää kannattaa käyttää yleisesti silloin, kun käpisteltävät asiat eivät ole järin suuria.
+JSsää kannattaa käyttää yleisesti silloin, kun käpisteltävät asiat eivät ole järin suuria. Aurinkotuulien ennustaminen vuosien päähän kannattaa toteuttaa jollain muulla kuin JavaScriptillä, mutta selaimessa tapahtuva tekstin merkkien pituuden laskeminen puolestaan on. Fiksu koodari valitsee oikeat työkalut oikeaan työvaiheeseen.
