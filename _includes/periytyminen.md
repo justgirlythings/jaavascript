@@ -18,7 +18,7 @@ alert(pomo.nimi + ' luotiin konstruktorifunktiolla');
 Huom! Konstruktorifunktiot on tapana kirjoittaa isolla alkukirjaimella.
 
 Käyttö
-----------
+------
 
 Olioiden kentät ovat julkisia, joten niiden dynaaminen lisääminen, muokkaaminen ja poistaminen on varsin helppoa:
 <pre><code> function Elain(nimi, laji){
@@ -33,7 +33,7 @@ alert(pomo.nimi + ' on ' + pomo.ika + ' vuotta, rotu: ' + pomo.rotu);
 </code></pre>
 
 Periminen
-========
+=========
 
 Olio voi periä ominaisuuksia prototyyppioliolta, joka toimii eräänlaisena esikuvana. Oliolla voi olla vain yksi prototyyppi, ja oletusarvoisesti se on Object-olio. Oliolla on perimistä varten prototype-kenttä, jonka arvo on olion prototyyppi.
 <pre><code> function Koira(nimi, rotu){
@@ -45,6 +45,10 @@ var pomo = new Koira('Pomo', 'Chihuahua');
 </code></pre>
 
 Prototyyppiketju
-----------
+----------------
 
-Otan täst kopin ku herään -- habs
+Prototyyppiketju kertoo, keneltä peritään ominaisuuksia. JavaScriptissä on mahdollista periä vain yhdeltä prototyypiltä ominaisuuksia, sillä kielessä ei ole moniperintää. Mikäli annamme väkisin useamman perittävän prototyypin kenttään prototype, vain viimeisin jää voimaan.
+
+Prototyyppiketju määrittää sen, mikä arvo annetaan, kun haetaan tiettyä kenttää - aluksi kysellään oliolta itseltään, mutta mikäli mitään ei löydy siirrytään ketjua ylöspäin askel kerrallaan, kunnes päädytään ketjun loppuun asti. Mikäli silloinkaan ei ole löytynyt mitään, palautetaan arvo "undefinend".
+
+Olion lähin prototyyppi on tallennettu (toistaiseksi) kenttään __proto__
