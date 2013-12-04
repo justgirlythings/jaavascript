@@ -11,6 +11,7 @@ Tätä dokumentaatiota kirjoitettaessa on käynyt selväksi, että Javascript on
 Module pattern
 ----------------
 
-Modulit toteutetaan tässä suunnittelumallissa sulkeumina. Monesti sulkeuma toteutetaan nimettynä funktiona, joka on pohjimmiltaan olio, joka joko suoritetaan heti määrittelyn jälkeen, jolloin johonkin tunnukseen tallentuu ainutkertainen instanssi kyseisestä moduulista. Toinen vahtoehto on olla suorittamatta sulkeumaa, vaan luoda siitä tunnukseen uusi olio aina tarvittaessa. 
+Modulit toteutetaan tässä suunnittelumallissa sulkeumina. Sulkeuma voidaa toteutettaa anonyyminä funktiona, joka on pohjimmiltaan olio, joka suoritetaan heti määrittelyn jälkeen, jolloin johonkin tunnukseen tallentuu ainutkertainen instanssi kyseisestä moduulista. Toinen vahtoehto on luoda nimetty funktio sulkeumana ja luoda siitä tunnukseen uusi olio aina tarvittaessa.
 
-Module pattern -suunnittelumallissa yritetään lähestyä esimerkiksi Javasta tuttua luokkapohjaista ohjelmointiparadigmaa, jossa luokalla on yksityisiä ja julkisia muuttujia sekä metodeja, funktioita. Javascriptissä on silti edelleen mahdollista muokata olion sisältämiä kenttiä ja funktioita, joka ei ole edellä mainitussa Javassa mahdollista.
+Module pattern -suunnittelumallissa yritetään lähestyä esimerkiksi Javasta tuttua luokkapohjaista ohjelmointiparadigmaa, jossa luokalla on yksityisiä ja julkisia muuttujia sekä metodeja, funktioita. Javascriptissä on silti edelleen mahdollista muokata olion sisältämiä kenttiä ja funktioita suorituksen edetessä, joka ei ole edellä mainitussa Javassa mahdollista.
+
