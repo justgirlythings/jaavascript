@@ -20,7 +20,7 @@ title: Welcome
 	{% for post in site.posts %}
 	<li><a id="{{ post.identifier }}" href="#">{{ post.title}}</a>
 		<div style="display:none" id="T{{ post.identifier }}">
-			<p><a href="{{ site.baseurl }}{{ post.url 	}}">Täällä</a>
+			<p><a href="{{ site.baseurl }}{{ post.url 	}}">Täällä:</a>
 			{{ post.preamble }}</p>
 			</br><button class="btn btn-github" id="{{ post.identifier }}">hide</button>
 		</div>
