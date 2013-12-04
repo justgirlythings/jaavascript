@@ -51,4 +51,4 @@ Prototyyppiketju kertoo, keneltä peritään ominaisuuksia. JavaScriptissä on m
 
 Prototyyppiketju määrittää sen, mikä arvo annetaan, kun haetaan tiettyä kenttää - aluksi kysellään oliolta itseltään, mutta mikäli mitään ei löydy siirrytään ketjua ylöspäin askel kerrallaan, kunnes päädytään ketjun loppuun asti. Mikäli silloinkaan ei ole löytynyt mitään, palautetaan arvo "undefinend".
 
-Olion lähin prototyyppi on tallennettu (toistaiseksi) kenttään __proto__
+Olion lähin prototyyppi on tallennettu (toistaiseksi) kenttään \_\_proto\_\_
